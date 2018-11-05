@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">WAN Configuration</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap fa-fw"></i> WAN
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>WAN Connection Type:</label>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="form-control">
+                                            <option value="STATIC">Static IP</option>
+                                            <option value="DYNAMIC">Dynamic IP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>IP Address:</label>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input class="form-control" placeholder="Enter IP Address">
+                                    </div>
+                                </div>
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>Subnet Mask:</label>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input class="form-control" placeholder="Enter subnet masking">
+                                    </div>
+                                </div>
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>Default Gateway:</label>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input class="form-control" placeholder="Enter gateway">
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>Primary DNS:</label>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input class="form-control" placeholder="Enter Primary DNS">
+                                    </div>
+                                </div>
+                                <div class="application-form row">
+                                    <div class="col-xs-4">
+                                        <label>Secondary DNS:</label>
+                                    </div>
+                                    <div class="col-xs-8" >
+                                        <div style="float: left;">
+                                            <input class="form-control" placeholder="Enter Primary DNS"/>
+                                        </div>
+                                        <div style="float: left;padding-top:5px;"> &nbsp;(Optional)</div>
+                                    </div>
+                                </div>
+                                <div class="gap"></div>
+                                <div class="application-form row">
+                                    <div class="col-xs-2 col-md-push-8">
+                                        <button class="btn btn-primary">&nbsp;Save&nbsp;</button>
+                                    </div>
+                                    <div class="col-xs-2 col-md-push-8">
+                                        <button class="btn btn-secondary">Clear All</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i> Status Help
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-comment fa-fw"></i> New Comment
+                                            <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                            <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-tasks fa-fw"></i> New Task
+                                            <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                            <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                            <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                            <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-money fa-fw"></i> Payment Received
+                                            <span class="pull-right text-muted small"><em>Yesterday</em>
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+{% endblock %}

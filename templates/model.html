@@ -1,0 +1,75 @@
+{% block model %}
+<!-- Model Window -->
+        <div id="DialogModel" class="model">
+            <!-- Modal content -->
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <label>Module Name</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <input class="form-control" placeholder="Add Module Name">
+                        </div>
+                    </div>
+                    <div class="gap"></div>
+                    <div class="row" style="overflow-y:scroll; height:223px">
+                        <table class="table table-sm table-dark">
+                            <thead>
+                                <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Pin No</th>
+                                <th scope="col">Pin Name</th>
+                                <th scope="col">Test Pin</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Pin-14</td>
+                                    <td><input class="form-group" value="Pin-14"></td>
+                                    <td><button class="btn btn-info btn-sm">Test</button></td>
+                                    <td><div class="led-box">
+                                            <div class="led-green"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Pin-16</td>
+                                    <td><input class="form-group" value="Pin-16"></td>
+                                    <td><button class="btn btn-info btn-sm">Test</button></td>
+                                    <td><div class="led-box">
+                                            <div class="led-green"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Pin-15</td>
+                                    <td><input class="form-group" value="Pin-15"></td>
+                                    <td><button class="btn btn-info btn-sm">Test</button></td>
+                                    <td><div class="led-box">
+                                            <div class="led-green"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Pin-18</td>
+                                    <td><input class="form-group" value="Pin-18"></td>
+                                    <td><button class="btn btn-info btn-sm">Test</button></td>
+                                    <td><div class="led-box">
+                                            <div class="led-green"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <!-- /.Panel Body -->
+            </div>
+        </div>
+{% endblock%}
