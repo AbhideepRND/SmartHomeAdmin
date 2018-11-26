@@ -16,7 +16,7 @@ var requestObject = {
     appURL:{
         Module:{
              Search:'/service/module/search',
-             Add:'',
+             Add:'/service/module/saveModule',
              Modify:'',
              Delete:'',
              TestModule:'/service/module/testModule'
